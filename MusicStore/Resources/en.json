@@ -1,0 +1,15 @@
+﻿{
+  "Genres": ["Synthwave", "Post-Punk", "Lofi Hip Hop", "Indie Folk", "Hyperpop", "Nu-Jazz", "Garage Rock", "Ambient Techno"],
+  "Adjectives": ["Neon", "Electric", "Broken", "Velvet", "Silent", "Golden", "Digital", "Cosmic", "Urban", "Faded", "Atomic", "Bitter", "Liquid"],
+  "Nouns": ["Echo", "Circuit", "Skyline", "Ghost", "Gravity", "Paradox", "Vibe", "Horizon", "Machine", "Static", "Kingdom", "Ocean", "Mirror"],
+  "ArtistPrefixes": ["The", "Project", "Lil", "DJ", "Captain", "Saint", "Big"],
+  "Names": ["Alex Rivers", "Luna Moon", "Jace Sterling", "Skylar Gray", "Felix Vox", "Nova Soul", "The Midnight Runners", "Echo Chamber", "Cyber Theory"],
+  "Reviews": [
+    "A masterclass in genre-blending. The production is crisp and the energy is infectious.",
+    "This track feels like a journey through a digital landscape. Truly immersive.",
+    "The rhythm section carries this song to new heights. A must-listen for this year.",
+    "Simple yet profound. The artist manages to capture a specific mood perfectly.",
+    "An experimental piece that pushes the boundaries of the genre. Bold and refreshing.",
+    "The melody stayed in my head for hours. Pure ear candy from start to finish."
+  ]
+}
