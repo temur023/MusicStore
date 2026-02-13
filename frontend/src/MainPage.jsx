@@ -9,13 +9,13 @@ function MainPage() {
     const [limit, setLimit] = useState(20);
     const [likes, setLikes] = useState(0);
     const [viewMode, setViewMode] = useState("table");
-
+    const api_url = "https://musicstore-production-1914.up.railway.app"
     const fetchSongs = useCallback(async (isInitial = false) => {
         if (seed === "" || isNaN(seed)) return;
 
         try {
             const response = await fetch(
-                `http://localhost:5055/api/Generator/get-songs?Region=${language}&Seed=${seed}&Page=${page}&Limit=${limit}&Likes=${likes}`
+                `${api_url}/api/Generator/get-songs?Region=${language}&Seed=${seed}&Page=${page}&Limit=${limit}&Likes=${likes}`
             );
             if (!response.ok) throw new Error("Server error");
             
@@ -148,7 +148,7 @@ function MainPage() {
                                                 <div className="d-flex bg-light p-4 border-bottom">
                                                     <div className="text-center me-4">
                                                         <img 
-                                                            src={`http://localhost:5055${song.coverUrl}`} 
+                                                            src={`${api_url}${song.coverUrl}`} 
                                                             alt="cover" 
                                                             className="rounded shadow" 
                                                             style={{ width: '200px', height: '200px', objectFit: 'cover' }} 
@@ -166,7 +166,7 @@ function MainPage() {
                                                             from <strong>{song.album}</strong> by <strong>{song.artist}</strong>
                                                         </p>
                                                         <audio controls className="w-100 mt-2">
-                                                            <source src={`http://localhost:5055${song.audioUrl}`} type="audio/mpeg" />
+                                                            <source src={`${api_url}${song.audioUrl}`} type="audio/mpeg" />
                                                         </audio>
                                                         <div className="mt-4 p-3 bg-white rounded border shadow-sm">
                                                             <small className="text-uppercase fw-bold text-muted" style={{ fontSize: '0.7rem' }}>Review</small>
@@ -211,7 +211,7 @@ function MainPage() {
                         <div className="col-md-4 mb-4" key={song.index}>
                             <div className="card shadow-sm h-100">
                                 <img 
-                                    src={`http://localhost:5055${song.coverUrl}`} 
+                                    src={`${api_url}${song.coverUrl}`} 
                                     className="card-img-top" 
                                     alt="cover" 
                                     style={{ height: '250px', objectFit: 'cover' }}
@@ -224,7 +224,7 @@ function MainPage() {
                                     <p className="card-text text-muted small mb-1">{song.artist}</p>
                                     <p className="card-text text-secondary x-small">{song.album} • {song.genre}</p>
                                     <audio controls className="w-100 mt-2" style={{ height: '35px' }}>
-                                        <source src={`http://localhost:5055${song.audioUrl}`} type="audio/mpeg" />
+                                        <source src={`${api_url}${song.audioUrl}`} type="audio/mpeg" />
                                     </audio>
                                 </div>
                             </div>
