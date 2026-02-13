@@ -26,12 +26,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseStaticFiles();
 app.UseRouting();
 
 app.UseCors("AllowFrontend");
 
 
-app.UseHttpsRedirection();
 
 app.MapControllers();
 app.Run();
