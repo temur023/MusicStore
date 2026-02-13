@@ -1,0 +1,12 @@
+# explicitly use the .NET SDK
+[phases.setup]
+nixPkgs = ["dotnet-sdk_9"]
+
+# OVERRIDE the build command to allow restore
+# We point directly to the project file
+[phases.build]
+cmds = ["dotnet publish MusicStore/MusicStore.csproj -c Release -o out"]
+
+# Start command
+[start]
+cmd = "./out/MusicStore"
