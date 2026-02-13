@@ -32,6 +32,7 @@ app.UseRouting();
 app.UseCors("AllowFrontend");
 
 
+// app.UseHttpsRedirection();
 
 app.MapControllers();
 app.Run();
