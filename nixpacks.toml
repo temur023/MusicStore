@@ -1,12 +1,15 @@
-# explicitly use the .NET SDK
+# Nixpacks Configuration for MusicStore
+# This file handles the entire build process. 
+# It runs from the REPO ROOT (see instructions below).
+
 [phases.setup]
 nixPkgs = ["dotnet-sdk_9"]
 
-# OVERRIDE the build command to allow restore
-# We point directly to the project file
 [phases.build]
+# We build explicitly from the root info the output folder
+# We DO NOT use --no-restore, ensuring packages are downloaded
 cmds = ["dotnet publish MusicStore/MusicStore.csproj -c Release -o out"]
 
-# Start command
 [start]
-cmd = "./out/MusicStore"
+# We run the published DLL from the output folder
+cmd = "dotnet out/MusicStore.dll"
