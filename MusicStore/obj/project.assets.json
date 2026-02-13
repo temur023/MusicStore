@@ -3884,19 +3884,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\irgas\\.nuget\\packages\\": {}
+    "/Users/fsdf/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MyProjects\\MusicStore\\MusicStore\\MusicStore.csproj",
+      "projectUniqueName": "/Users/fsdf/RiderProjects/MusicStore/MusicStore/MusicStore.csproj",
       "projectName": "MusicStore",
-      "projectPath": "D:\\MyProjects\\MusicStore\\MusicStore\\MusicStore.csproj",
-      "packagesPath": "C:\\Users\\irgas\\.nuget\\packages\\",
-      "outputPath": "D:\\MyProjects\\MusicStore\\MusicStore\\obj\\",
+      "projectPath": "/Users/fsdf/RiderProjects/MusicStore/MusicStore/MusicStore.csproj",
+      "packagesPath": "/Users/fsdf/.nuget/packages/",
+      "outputPath": "/Users/fsdf/RiderProjects/MusicStore/MusicStore/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\irgas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/fsdf/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -3984,7 +3984,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.310/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/Users/fsdf/.dotnet/sdk/9.0.304/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
