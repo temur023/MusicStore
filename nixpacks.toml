@@ -1,5 +1,0 @@
-[phases.build]
-cmds = ["dotnet publish -c Release -o out"]
-
-[start]
-cmd = "dotnet out/MusicStore.dll"
